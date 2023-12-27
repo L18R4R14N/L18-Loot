@@ -1,0 +1,66 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:leather",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "min": 1,
+                    "max": 2
+                  },
+                  "add": true
+                }
+              ]
+            },
+            {
+              "type": "minecraft:group",
+              "children": [
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:blackstone"
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:gilded_blackstone"
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:crying_obsidian"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:iron_nugget",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "min": 1,
+                    "max": 5
+                  },
+                  "add": true
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:chain"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:group",
+              "children": [
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:blackstone"
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:gilded_blackstone"
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:crying_obsidian"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:quartz",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.75
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:magma_cream",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "min": 2,
+                    "max": 6
+                  },
+                  "add": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
