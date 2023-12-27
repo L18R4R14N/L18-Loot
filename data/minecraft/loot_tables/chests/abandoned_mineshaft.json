@@ -1,0 +1,287 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:group",
+              "children": [
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:flint_and_steel"
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:compass"
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:clock"
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:map",
+                  "functions": [
+                    {
+                      "function": "minecraft:exploration_map",
+                      "destination": "minecraft:village",
+                      "decoration": "banner_green",
+                      "zoom": 1,
+                      "skip_existing_chunks": false
+                    }
+                  ]
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.15
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/abandoned_mineshaft/valuable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/equipment/tools/iron_diamond/shovel",
+              "functions": [
+                {
+                  "function": "minecraft:enchant_randomly",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:random_chance",
+                      "chance": 0.33
+                    }
+                  ]
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.15
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/abandoned_mineshaft/valuable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/equipment/tools/iron_diamond/pickaxe",
+              "functions": [
+                {
+                  "function": "minecraft:enchant_randomly",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:random_chance",
+                      "chance": 0.33
+                    }
+                  ]
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.15
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/abandoned_mineshaft/valuable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/equipment/armor/iron_gold_diamond/helmet",
+              "functions": [
+                {
+                  "function": "minecraft:enchant_randomly",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:random_chance",
+                      "chance": 0.33
+                    }
+                  ]
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.15
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/abandoned_mineshaft/supply"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/equipment/armor/leather_chainmail_iron/chestplate",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.15
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/abandoned_mineshaft/filler"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/equipment/armor/leather_chainmail_iron/leggings",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.15
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/abandoned_mineshaft/filler"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/equipment/armor/leather_chainmail_iron/boots",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.15
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/abandoned_mineshaft/filler"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 16,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/abandoned_mineshaft/treasure",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.15
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/abandoned_mineshaft/valuable",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.4
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/abandoned_mineshaft/supply",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/abandoned_mineshaft/trash",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.6
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/abandoned_mineshaft/filler"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "random_sequence": "minecraft:chests/abandoned_mineshaft"
+}

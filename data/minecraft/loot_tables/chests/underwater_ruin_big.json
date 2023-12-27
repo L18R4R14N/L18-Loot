@@ -1,0 +1,286 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:map",
+              "functions": [
+                {
+                  "function": "minecraft:exploration_map",
+                  "decoration": "red_x",
+                  "zoom": 1,
+                  "skip_existing_chunks": false
+                },
+                {
+                  "function": "minecraft:set_name",
+                  "name": {
+                    "translate": "filled_map.buried_treasure"
+                  }
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.15
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/underwater_ruin_big/filler"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:group",
+              "children": [
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:fishing_rod",
+                  "functions": [
+                    {
+                      "function": "minecraft:enchant_randomly",
+                      "conditions": [
+                        {
+                          "condition": "minecraft:random_chance",
+                          "chance": 0.15
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:spyglass"
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:brush"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/underwater_ruin_big/filler"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/equipment/armor/leather_chainmail_iron/helmet",
+              "functions": [
+                {
+                  "function": "minecraft:enchant_randomly",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:random_chance",
+                      "chance": 0.25
+                    }
+                  ]
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.15
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/underwater_ruin_big/filler"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/equipment/armor/leather_chainmail_iron/chestplate",
+              "functions": [
+                {
+                  "function": "minecraft:enchant_randomly",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:random_chance",
+                      "chance": 0.25
+                    }
+                  ]
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.15
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/underwater_ruin_big/filler"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/equipment/armor/leather_chainmail_iron/leggings",
+              "functions": [
+                {
+                  "function": "minecraft:enchant_randomly",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:random_chance",
+                      "chance": 0.25
+                    }
+                  ]
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.15
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/underwater_ruin_big/filler"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/equipment/armor/leather_chainmail_iron/boots",
+              "functions": [
+                {
+                  "function": "minecraft:enchant_randomly",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:random_chance",
+                      "chance": 0.25
+                    }
+                  ]
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.15
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/underwater_ruin_big/filler"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 21,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/underwater_ruin_big/treasure",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.15
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/underwater_ruin_big/valuable",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.4
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/underwater_ruin_big/supply",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/underwater_ruin_big/trash",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.6
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/underwater_ruin_big/filler"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "random_sequence": "minecraft:chests/underwater_ruin_big"
+}

@@ -1,0 +1,289 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:heart_of_the_sea"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:potion",
+              "functions": [
+                {
+                  "function": "minecraft:set_potion",
+                  "id": "minecraft:long_water_breathing"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.15
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/buried_treasure/valuable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:group",
+              "children": [
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:clock"
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:spyglass"
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:iron_sword",
+                  "functions": [
+                    {
+                      "function": "minecraft:enchant_randomly"
+                    },
+                    {
+                      "function": "minecraft:set_damage",
+                      "damage": {
+                        "type": "minecraft:uniform",
+                        "min": 0.15,
+                        "max": 0.95
+                      }
+                    }
+                  ]
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.25
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/buried_treasure/valuable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/equipment/armor/leather_chainmail_iron/helmet",
+              "functions": [
+                {
+                  "function": "minecraft:enchant_randomly",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:random_chance",
+                      "chance": 0.25
+                    }
+                  ]
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.15
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/buried_treasure/valuable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/equipment/armor/leather_chainmail_iron/chestplate",
+              "functions": [
+                {
+                  "function": "minecraft:enchant_randomly",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:random_chance",
+                      "chance": 0.25
+                    }
+                  ]
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.15
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/buried_treasure/valuable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/equipment/armor/leather_chainmail_iron/leggings",
+              "functions": [
+                {
+                  "function": "minecraft:enchant_randomly",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:random_chance",
+                      "chance": 0.25
+                    }
+                  ]
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.15
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/buried_treasure/valuable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/equipment/armor/leather_chainmail_iron/boots",
+              "functions": [
+                {
+                  "function": "minecraft:enchant_randomly",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:random_chance",
+                      "chance": 0.25
+                    }
+                  ]
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.15
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/buried_treasure/valuable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 20,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/buried_treasure/treasure",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.15
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/buried_treasure/valuable",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.4
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/buried_treasure/supply",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.5
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/buried_treasure/trash",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.6
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "l18_loot:chests/buried_treasure/filler"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "random_sequence": "minecraft:chests/buried_treasure"
+}
