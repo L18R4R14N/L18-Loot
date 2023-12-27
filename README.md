@@ -1,6 +1,6 @@
 # L18-Loot
 ## Summary
-Loot - datapack that rewrites all loot tables associated with structures (mineshafts, strongholds, bastions, etc.) in order to fill chests with various structure-themed items and more consistent rewards, while retaining most items from the vanilla loot tables and also adding new stuff. An overview of the changes is listed below:
+Loot – datapack that rewrites all loot tables associated with structures (mineshafts, strongholds, bastions, etc.) in order to fill chests with various structure-themed items and more consistent rewards, while retaining most items from the vanilla loot tables and also adding new stuff. An overview of the changes is listed below:
 1. Added dependency of loot in mineshafts from the height at which the structure is generated - now the ores found in chests will correspond to the height at which the ore is generated;
 2. Added dependency of loot in nether fortresses from the biome in which the fortress is generated;
 3. In the treasure chest of the bastion you can now find netherite armor;
