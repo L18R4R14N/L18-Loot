@@ -1,0 +1,11 @@
+{
+  "pack": {
+    "pack_format": 26,
+    "description": [
+      {
+        "text": "Makes loot from chests much juicier",
+        "color": "gold"
+      }
+    ]
+  }
+}
