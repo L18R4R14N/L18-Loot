@@ -1,0 +1,71 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:salmon_bucket",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.2
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:cod_bucket",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.2
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:water_bucket",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.2
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:cod"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:salmon"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:barrel"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:coal"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:fishing_rod",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.15
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

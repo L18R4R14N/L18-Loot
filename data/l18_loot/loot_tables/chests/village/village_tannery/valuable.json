@@ -1,0 +1,70 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:group",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:leather",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "min": 1,
+                    "max": 2
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:group",
+              "children": [
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:leather_boots"
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:leather_chestplate"
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:leather_leggings"
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:leather_helmet"
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:leather_horse_armor"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.25
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:saddle",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.15
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
